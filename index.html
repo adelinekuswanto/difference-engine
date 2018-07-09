@@ -6,37 +6,48 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Bootstrap CSS & JS-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+	<!-- Custom Script -->
+	<script src="JS/effects.js"></script>
 	<!-- Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Archivo:400,600" rel="stylesheet">
 	<title>Difference Engine</title>
 </head>
 
 <body>
-<!-- Header start -->
+<!-- Header-->
 	<header class="main-header">
-			<div class="row">
-				<div class="col-12 subnav-links">
+			<div class="row no-gutters">
+				<div class="col-sm-12 col-lg-4">
+					<a class="navbar-brand" href="#"><img src="images/DE_logo_horizontal.png" alt="DE Logo"></a>
+			  	</div>
+				<div class="col-sm-12 col-lg-8 subnav-links">
 					<ul class="list-inline">
-						<li class="list-inline-item"><a href="#">facebook</a></li>
-						<li class="list-inline-item"><a href="#">twitter</a></li>
-						<li class="list-inline-item"><a href="#">instagram</a></li>
+						<li class="list-inline-item btn-wrapper"><a class="link-animated after" href="#">facebook</a></li>
+						<li class="list-inline-item"><a class="link-animated after" href="#">twitter</a></li>
+						<li class="list-inline-item"><a class="link-animated after" href="#">instagram</a></li>
+						<li class="list-inline-item">
+							<form class="form-inline">
+						      <input class="subnav-search form-control" type="search" placeholder="Search" aria-label="Search">
+						      <button class="fa-button" type="submit"><i class="fas fa-search"></i></button>
+							</form>
+						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-12">
-						<a class="navbar-brand" href="#"><h1>Difference Engine logo</h1></a>
-			  	</div>
-			</div>
-			<div class="row navbar-wrapper">
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="row no-gutters navbar-wrapper">
+				<nav class="navbar navbar-expand-lg navbar-light">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    		<span class="navbar-toggler-icon"></span>
 			  		</button>
-					<div class="col-12 collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto">
+					<div class="col-sm-12 col-lg-12 collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav">
 							<li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
 							<li class="nav-item"><a class="nav-link" href="#">About</a></li>
 							<li class="nav-item dropdown">
@@ -59,35 +70,453 @@
 							<li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
 							<li class="nav-item"><a class="nav-link" href="#">Subscribe</a></li>
 						</ul>
-						<form class="form-inline my-2 my-lg-0">
-					      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-					    </form>
 					</div>
 				</nav>
 			</div>
 	</header>
-<!-- Header end -->
 
-<!-- Main section start -->
-<main class="main">
-	<section class="section-about">
-		<div class="jumbotron">
-  			<div class="container">
-  				<div class="row">
-  					<div class="col-6 jumbotron-image">
-  					</div>
-  					<div class="col-6">
-  						<h1 class="display">Difference Engine is a Singapore-based independent comics publishing house.</h1>
-						<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-						<hr class="my-4">
-						<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-						<p class="lead">
-							<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+<!-- Main section-->
+	<main class="main">
+		<!-- Jumbotron-->
+		<section class="section-jumbotron">
+			<div class="jumbotron">
+	  				<div class="row no-gutters">
+	  					<div class="col-sm-12 col-lg-6 jumbotron-image">
+	  						<img class="w-100" src="images/DE_jumbotron_art.png">
+	  					</div>
+	  					<div class="col-sm-12 col-lg-6 jumbotron-caption bg-blue align-middle">
+	  						<h1>Difference Engine is a Singapore-based independent comics publishing house.</h1>
+							<p>We are inspired by the wealth of stories coming from Asia and are driven by the commitment to share those narratives with the world. We believe in sparking imagination through the make-believe, in the ability of visual storytelling to shape ideas, and in a reality powered by comics.</p>
+							<a class="btn btn--white btn-animated" href="#" role="button">Learn more<i class="fas fa-chevron-right" style="margin-left: 0.5em"></i></a>
+	  					</div>
+	  				</div>
+	   		</div>
+	   	</section>
+	   	
+		<!-- Carousel-->
+	   	<section class="section-carousel">
+	   		<div class="row no-gutters">
+	   			<div class="col-12">
+			   		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      <img class="d-block w-100" src="images/DE_jumbotron_img.jpg" alt="First slide">
+					    </div>
+					    <div class="carousel-item">
+					      <img class="d-block w-100" src="images/DE_jumbotron_img2.jpg" alt="Second slide">
+					    </div>
+					    <div class="carousel-item">
+					      <img class="d-block w-100" src="images/DE_jumbotron_img3.jpg" alt="Third slide">
+					    </div>
+					  </div>
+					  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					  	<span class="carousel-control-icon hvr-backward" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+					    <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					  	<span class="carousel-control-icon hvr-forward" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+					    <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+					    <span class="sr-only">Next</span>
+					  </a>
+					  <ol class="carousel-indicators">
+					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					  </ol>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Comics -->
+		<div class="container">
+			<section class="section-comics">
+				<div class="row">
+					<div class="col-12 section-title">
+						<h1>Comics</h1>
+					</div>
+				</div>
+				<div class="row mt-4">
+					<div class="comics-item col-sm-6 col-lg-3">
+						<!-- Cover image -->
+						<div class="cover-image">
+							<img class="w-100" src="images/DE_cover_img.jpg">
+						</div>
+						<!-- Cover title -->
+						<div class="cover-title">
+							<h2>Taproot</h2>
+						</div>
+						<!-- Cover description -->
+						<div class="cover-description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<!-- Buttons -->
+						<button type="button" class="btn btn--primary btn-animated">Trailer</button> <button type="button" class="btn btn--primary btn-animated">Sample</button>
+					</div>
+					<div class="comics-item col-sm-6 col-lg-3">
+						<!-- Cover image -->
+						<div class="cover-image">
+							<img class="w-100" src="images/DE_cover_img2.jpg">
+						</div>
+						<!-- New flag -->
+						<div class="flag-wrapper">
+							<strong class="flag-new flag">New</strong>
+						</div>
+						<!-- Cover title -->
+						<div class="cover-title">
+							<h2>Ghost Money</h2>
+						</div>
+						<!-- Cover description -->
+						<div class="cover-description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<!-- Buttons -->
+						<button type="button" class="btn btn--primary btn-animated">Trailer</button> <button type="button" class="btn btn--primary btn-animated">Sample</button>
+					</div>
+					<div class="comics-item col-sm-6 col-lg-3">
+						<!-- Cover image -->
+						<div class="cover-image">
+							<img class="w-100" src="images/DE_cover_img3.jpg">
+						</div>
+						<!-- Coming soon flag -->
+						<div class="flag-wrapper">
+							<strong class="flag-comingsoon flag">Coming soon</strong>
+						</div>
+						<!-- Cover title -->
+						<div class="cover-title">
+							<h2>Beetroot</h2>
+						</div>
+						<!-- Cover description -->
+						<div class="cover-description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<!-- Buttons -->
+						<button type="button" class="btn btn--primary btn-animated">Trailer</button> <button type="button" class="btn btn--primary btn-animated">Sample</button>
+					</div>
+					<div class="comics-item col-sm-6 col-lg-3">
+						<!-- Cover image -->
+						<div class="cover-image">
+							<img class="w-100" src="images/DE_cover_img4.jpg">
+						</div>
+						<!-- New flag -->
+						<div class="flag-wrapper">
+							<strong class="flag-new flag">New</strong>
+						</div>
+						<!-- Cover title -->
+						<div class="cover-title">
+							<h2>The Fix</h2>
+						</div>
+						<!-- Cover description -->
+						<div class="cover-description">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<!-- Buttons -->
+						<button type="button" class="btn btn--primary btn-animated">Trailer</button> <button type="button" class="btn btn--primary btn-animated">Sample</button>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- By Genre -->
+		<div class="container">
+			<section class="section-genre">
+					<div class="row">
+						<div class="col-12 section-title">
+							<h1>Browse by Genre</h1>
+						</div>
+					</div>
+					<div class="row no-gutters genre-block">
+						<div class="col-sm-12 col-lg-6">
+							<img class="w-100" src="images/DE_genre_img.jpg">
+						</div>
+						<a class="col-sm-12 col-lg-6 genre-block-1 genre-link genre-link--primary genre-link-animated">
+							<h3>Children</h3>
+						</a>
+					</div>
+					<div class="row no-gutters genre-block">
+						<div class="col-sm-12 col-lg-6">
+							<img class="w-100" src="images/DE_genre_img2.jpg">
+						</div>
+						<a class="col-sm-12 col-lg-6 genre-block-2 genre-link genre-link--primary genre-link-animated">
+							<h3>Educational</h3>
+						</a>
+					</div>
+					<div class="row no-gutters genre-block">
+						<div class="col-sm-12 col-lg-6">
+							<img class="w-100" src="images/DE_genre_img3.jpg">
+						</div>
+						<a class="col-sm-12 col-lg-6 genre-block-3 genre-link genre-link--primary genre-link-animated">
+							<h3>Adventure</h3>
+						</a>
+					</div>
+					<div class="row no-gutters genre-block">
+						<div class="col-sm-12 col-lg-6">
+							<img class="w-100" src="images/DE_genre_img4.jpg">
+						</div>
+						<a class="col-sm-12 col-lg-6 genre-block-4 genre-link genre-link--primary genre-link-animated">
+							<h3>Sci-fi</h3>
+						</a>
+					</div>
+			</section>
+		</div>
+
+		<!-- Web Comics -->
+		<div class="container">
+			<section class="section-webcomics">
+					<div class="row">
+						<div class="col-12 section-title">
+							<h1>Web Comics</h1>
+						</div>
+					</div>
+					<div class="row mt-4">
+						<div class="col-sm-6 col-lg-3">
+							<!-- Image thumbnail -->
+						    <a class="thumbnail text-left hvr-underline-from-left">
+						    	<div class="caption">
+						            <h2>Green and Gold</h2>
+						            <p>By Artist</p>
+						        </div>	
+						        <div class="overlay">
+						        	<img src="images/DE_webc_img.jpg" alt="" class="webcomics-cover">
+						        </div>
+						  	</a>
+					        <!-- New flag -->
+					        <div class="flag-wrapper">
+								<strong class="flag-new flag">New</strong>
+							</div>    
+						</div>
+
+						<div class="col-sm-6 col-lg-3">
+							<!-- Image thumbnail -->
+						    <a class="thumbnail text-left hvr-underline-from-left">
+						    	<div class="caption">
+						            <h2>Preheat</h2>
+						            <p>By Artist</p>
+						        </div>	
+						        <div class="overlay">
+						        	<img src="images/DE_webc_img2.jpg" alt="" class="webcomics-cover">
+						        </div>
+						  	</a>
+						</div>
+
+						<div class="col-sm-6 col-lg-3">
+							<!-- Image thumbnail -->
+						  	<a class="thumbnail text-left hvr-underline-from-left">
+						    	<div class="caption">
+						            <h2>Bubblegum Girls</h2>
+						            <p>By Artist</p>
+						        </div>	
+						        <div class="overlay">
+						        	<img src="images/DE_webc_img3.jpg" alt="" class="webcomics-cover">
+						        </div>
+						  	</a>
+						</div>
+
+						<div class="col-sm-6 col-lg-3">
+							<!-- Image thumbnail -->
+						    <a class="thumbnail text-left hvr-underline-from-left">
+						    	<div class="caption">
+						            <h2>Alice in Wonderland</h2>
+						            <p>By Artist</p>
+						        </div>	
+						        <div class="overlay">
+						        	<img src="images/DE_webc_img4.jpg" alt="" class="webcomics-cover">
+						        </div>
+						  	</a>
+						</div>
+					</div>
+			</section>
+		</div>
+
+		<!-- Features, News, Social -->
+		<div class="container section-wrapper">
+			<div class="row no-gutters">
+				<div class="col-sm-12 col-lg-8">
+					<!--Features & News -->
+					<section class="section-features">
+						<div class="row">
+							<div class="col-12 section-title">
+								<h1>Features</h1>
+							</div>
+						</div>
+						<div class ="row no-gutters mt-4">
+							<div class="col-sm-12 col-lg-6" style="position: relative">
+								<img src="images/DE_features_img.jpg">
+								<div class="caption">
+				            		<h3>Green and Gold</h3>
+								</div>
+							</div>
+							<a class="col-sm-12 col-lg-6 bg-blue p-4 hvr-underline-from-left">
+								<p>Artist's Name</p>
+								<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at odio mi.</h3>
+								<p class="mt-3">Month dd, yyyy</p>
+							</a>
+						</div>
+
+						<div class ="row no-gutters mt-4">
+							<div class="col-sm-12 col-lg-6" style="position: relative">
+								<img src="images/DE_features_img.jpg">
+								<div class="caption">
+				            		<h3>Green and Gold</h3>
+								</div>
+							</div>
+							<a class="col-sm-12 col-lg-6 bg-blue p-4 hvr-underline-from-left">
+								<p>Artist's Name</p>
+								<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at odio mi.</h3>
+								<p>Month dd, yyyy</p>
+							</a>
+						</div>
+					</section>
+
+					<section class="section-news">
+						<div class="row">
+							<div class="col-12 section-title">
+								<h1>News</h1>
+							</div>
+						</div>
+						<div class="row mt-4">
+							<div class="col-sm-12 col-lg-6">
+								<div class="thumbnail">
+									<img src="images/DE_news_img.jpg" style="width:100%">
+								</div>
+								<div class="blog-caption-wrapper">
+									<a class="blog-caption hvr-underline-from-left">
+										<p>Date</p>
+										<h3>SyFy’s DEADLY CLASS First Look trailer unveiled</h3>
+										<p>I’ve always wanted to create comics. Ever since I was a kid, that’s all I wanted to do..</p>
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-12 col-lg-6">
+								<div class="thumbnail">
+									<img src="images/DE_news_img2.jpg" style="width:100%">
+								</div>
+								<div class="blog-caption-wrapper">
+									<a class="blog-caption hvr-underline-from-left">
+										<p>Date</p>
+										<h3>SyFy’s DEADLY CLASS First Look trailer unveiled</h3>
+										<p>I’ve always wanted to create comics. Ever since I was a kid, that’s all I wanted to do..</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<!-- Social media feed -->
+				<aside class="col-sm-12 col-lg-4">
+					<div class="row">
+						<div class="col-12 section-title">
+							<h1>Social</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 mt-4">
+							<div class="twitter-wrapper">
+								<a class="twitter-timeline" data-height="700" href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+
+	<footer class="footer bg-blue">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-lg-2">
+					<div class="footer-brand">
+						<img src="images/DE_logo_square.svg">
+					</div>
+				</div>
+				<div class="col-sm-8 col-lg-3">
+					<div class="footer-text">
+						<p>
+							284 River Valley Road<br>
+							#01-01<br>
+							Singapore 238325
 						</p>
-  					</div>
-  				</div>
-  			</div>
-   		</div>
-   	</section>
-   	
+						<p>
+							email@differenceengine.sg
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-12 col-lg-7">
+					<div class="footer-form">
+						<h4>Subscribe to our newsletter</h4>
+						<form class="form-subscription">
+						  <div class="form-row">
+						    <div class="col-4">
+						      <input type="text" class="form-control" placeholder="Full Name">
+						    </div>
+						    <div class="col-4">
+						      <input type="text" class="form-control" placeholder="Email">
+						    </div>
+						    <div class="col-4">
+						      <button type="submit" class="btn btn--white btn-animated">Submit</button>
+						    </div>
+						  </div>
+						</form>
+					</div>
+					<div class="footer-social-links mt-4">
+						<ul class="list-inline">
+							<li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+					</div>
+					<!-- <div class="row">
+						<div class="col-4">
+							<ul>
+								<li>Home</li>
+								<li>About</li>
+								<li>Comics</li>
+							</ul>
+						</div>
+						<div class="col-4">
+							<ul>
+								<li>Web Comics</li>
+								<li>Features</li>
+								<li>News</li>
+							</ul>
+						</div>
+						<div class="col-4">
+							<ul>
+								<li>Submissions</li>
+								<li>Contact Us</li>
+								<li>Subscribe</li>
+							</ul>
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<!-- Copyright -->
+			<div class="row mt-4">
+				<div class="col-12">
+					<div class="footer-bottom">
+						<p>All content copyright © & Trademarked TM 2018 Difference Engine or their respective owners. Image and its logos are ® and © 2018 Difference Engine. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="row no-gutters">
+		<div class="col-12">
+			<img class="w-100" src="images/DE_footer_img.png">
+		</div>
+	</div>
+	<a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+</body>
+
+
+
+
+
+
+
+
+
+
