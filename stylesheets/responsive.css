@@ -1,0 +1,109 @@
+/* For phones */
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .comics-item .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 736px) and (max-width: 992px) {
+  section.section-comics .comics-block > :first-child {
+    margin-bottom: 2rem;
+  }
+
+  section.section-news .news-block > :first-child {
+    margin-bottom: 2rem;
+  }
+
+  section.section-webcomics .webcomics-block > :first-child {
+    margin-bottom: 2rem;
+  }
+
+  .card-columns {
+    column-count: 2;
+  }
+}
+@media only screen and (max-width: 992px) {
+  header.main-header .subnav-links {
+    display: none;
+  }
+
+  .navbar {
+    width: 100%;
+    padding: 0;
+  }
+  .navbar .navbar-nav {
+    margin-bottom: 1rem;
+  }
+  .navbar .navbar-nav li a.nav-link {
+    padding: 0.5rem 0;
+  }
+  .navbar .navbar-toggler {
+    width: 100%;
+    text-align: right;
+  }
+
+  .dropdown-menu a.dropdown-item {
+    padding: 0;
+  }
+
+  section.section-jumbotron .jumbotron-image {
+    display: none;
+  }
+  section.section-jumbotron .jumbotron-image-mobile {
+    display: block;
+    min-height: 0px;
+  }
+
+  section.section-genre .genre-link h3 {
+    position: initial;
+    transform: none;
+    top: initial;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  section.section-features {
+    margin-right: 0;
+  }
+
+  section.section-news {
+    margin-right: 0;
+  }
+
+  footer.footer .form-bluebg {
+    margin: 2rem 0;
+  }
+  footer.footer .footer-brand {
+    margin-bottom: 2rem;
+  }
+  footer.footer .footer-brand img {
+    width: 150px !important;
+  }
+
+  .footer-border {
+    display: none;
+  }
+
+  .footer-border-mobile {
+    display: block;
+    min-height: 0px;
+  }
+}
+@media only screen and (max-width: 735px) {
+  section.section-comics .comics-block > :not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  section.section-webcomics .webcomics-block > :not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  section.section-news {
+    margin-right: 0;
+  }
+  section.section-news .news-block > :not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

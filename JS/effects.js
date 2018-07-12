@@ -20,6 +20,10 @@ $(document).ready(function() {
         	scrollTop : 0                       // Scroll to top of body
     	}, 500);
 	});
+
+	$('.hamburger').click(function() {
+		$(this).toggleClass('is-active');
+	})
 });
 
 // ===== Scroll to Top ==== 
