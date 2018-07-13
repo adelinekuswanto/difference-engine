@@ -23,11 +23,12 @@
 <body class="home">
 <!-- Header-->
 	<header class="main-header">
-			<div class="row no-gutters">
+			<div class="row no-gutters px-3">
 				<div class="col-sm-12 col-lg-4">
 					<a class="navbar-brand" href="#"><img src="images/DE_logo_horizontal.png" alt="DE Logo"></a>
 			  	</div>
 				<div class="col-sm-12 col-lg-8">
+					<!-- Secondary menu -->
 					<ul class="list-inline subnav-links">
 						<li class="list-inline-item btn-wrapper"><a class="link-animated after" href="#">facebook</a></li>
 						<li class="list-inline-item"><a class="link-animated after" href="#">twitter</a></li>
@@ -43,12 +44,16 @@
 			</div>
 			<div class="row no-gutters navbar-wrapper">
 				<nav class="navbar navbar-expand-lg navbar-light">
-					<button class="hamburger hamburger--spin navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-submenu" aria-controls="navbar-submenu" aria-expanded="false" aria-label="Toggle navigation">
+					<!-- Hamburger button -->
+					<button class="hamburger hamburger--spin navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-primenu" aria-controls="navbar-primenu" aria-expanded="false" aria-label="Toggle navigation">
 			    		<span class="hamburger-box">
 			    			<span class="hamburger-inner"></span>
 			    		</span>
 			  		</button>
-					<div class="col-sm-12 col-lg-12 collapse navbar-collapse" id="navbar-submenu">
+					<div class="col-sm-12 col-lg-12 collapse navbar-collapse" id="navbar-primenu">
+						<div class="sticky-logo" style="display:none">
+							<img src="images/DE_sticky_logo.svg">
+						</div>
 						<ul class="navbar-nav">
 							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
 							<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
@@ -85,12 +90,12 @@
 	  						<img class="w-100" src="images/DE_jumbotron_artmobile.jpg">
 	  					</div>
 	  					<div class="col-sm-12 col-lg-6 jumbotron-image">
-	  						<img class="w-100" src="images/DE_jumbotron_art.png">
 	  					</div>
 	  					<div class="col-sm-12 col-lg-6 jumbotron-caption bg-blue align-middle">
 	  						<h1>Difference Engine is a Singapore-based independent comics publishing house.</h1>
 							<p>We are inspired by the wealth of stories coming from Asia and are driven by the commitment to share those narratives with the world. We believe in sparking imagination through the make-believe, in the ability of visual storytelling to shape ideas, and in a reality powered by comics.</p>
 							<!--<a class="btn btn--white btn-animated" href="#" role="button">Learn more<i class="fas fa-chevron-right" style="margin-left: 0.5em"></i></a>-->
+							<!-- Subscription form -->
 							<div class="form-bluebg">
 								<h4>Subscribe to our newsletter</h4>
 								<form class="form-subscription">
@@ -367,7 +372,43 @@
 								<h1>Features</h1>
 							</div>
 						</div>
-						<div class ="row no-gutters mt-4">
+						<div class="row blog-block mt-4">
+							<div class="col-sm-12 col-lg-6">
+								<div class="card">
+								    <div class="card-img-wrapper">
+									    <img class="card-img-top" src="images/DE_features_img.jpg" alt="Card image cap">
+									    <div class="caption">
+					            			<h4>Artist's name</h4>
+										</div>
+									</div>
+								    <a class="blog-caption hvr-underline-from-left" href="features-single.html">
+									    <div class="card-body p-1">
+									    	<p class="card-text">Date</p>
+										    <h3 class="card-title">Card title that wraps to a new line</h3>
+										    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								    	</div>
+							    	</a>
+							    </div>
+							</div>
+							<div class="col-sm-12 col-lg-6">
+								<div class="card">
+									<div class="card-img-wrapper">
+									    <img class="card-img-top" src="images/DE_features_img2.jpg" alt="Card image cap">
+									    <div class="caption">
+					            			<h4>Artist's name</h4>
+										</div>
+									</div>
+								    <a class="blog-caption hvr-underline-from-left" href="features-single.html">
+									    <div class="card-body p-1">
+									    	<p class="card-text">Date</p>
+										    <h3 class="card-title">Card title that wraps to a new line</h3>
+										    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								    	</div>
+							    	</a>
+							    </div>
+							</div>
+						</div>
+						<!--<div class ="row no-gutters mt-4">
 							<div class="col-sm-12 col-lg-6" style="position: relative">
 								<img src="images/DE_features_img.jpg">
 								<div class="caption">
@@ -393,7 +434,7 @@
 								<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at odio mi.</h3>
 								<p>Month dd, yyyy</p>
 							</a>
-						</div>
+						</div> -->
 					</section>
 
 					<section class="section-news">
@@ -402,11 +443,11 @@
 								<h1>News</h1>
 							</div>
 						</div>
-						<div class="row news-block mt-4">
+						<div class="row blog-block mt-4">
 							<div class="col-sm-12 col-lg-6">
 								<div class="card">
 								    <img class="card-img-top" src="images/DE_news_img.jpg" alt="Card image cap">
-								    <a class="blog-caption hvr-underline-from-left">
+								    <a class="blog-caption hvr-underline-from-left" href="news-single.html">
 									    <div class="card-body p-1">
 										    	<p class="card-text">Date</p>
 											    <h3 class="card-title">Card title that wraps to a new line</h3>
@@ -418,7 +459,7 @@
 							<div class="col-sm-12 col-lg-6">
 								<div class="card">
 								    <img class="card-img-top" src="images/DE_news_img2.jpg" alt="Card image cap">
-								    <a class="blog-caption hvr-underline-from-left">
+								    <a class="blog-caption hvr-underline-from-left" href="news-single.html">
 									    <div class="card-body p-1">
 										    	<p class="card-text">Date</p>
 											    <h3 class="card-title">Card title that wraps to a new line</h3>
