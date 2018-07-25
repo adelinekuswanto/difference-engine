@@ -637,6 +637,26 @@ button {
     border-bottom: 1px solid $de-light-blue;
 }
 
+/* FA Icon */
+
+.circle-icon {
+    background: $de-blue;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    padding: 13px;
+
+    &:hover,
+    &:active,
+    &:focus {
+    	background: $de-light-blue;
+    }
+}
+
 /* Hover Effects */
 
 .hvr-forward {
@@ -1088,6 +1108,76 @@ section.section-webcomics {
 		transition: all 0.5s ease-in-out;
 		opacity: 0.75;
 	}
+}
+
+/* Webcomics Single */
+
+.chapter-link {
+	position: relative;
+    display: inline-block;
+    text-align: left;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    padding: 1rem 0 0 1.5rem !important;
+
+    h6 {
+    	display: inline-block;
+    }
+
+    .up {
+    	color: $de-green;
+    	font-size: 12px;
+    	font-family: $archivo;
+    	font-weight: 600;
+    	margin-left: 0.5rem;
+    }
+}
+
+.chapter-link--primary {
+	background: $white;
+  	color: $de-blue;
+  	border: 0;
+  	border-radius: 0;
+}
+
+.chapter-link-animated {
+  	transition-property: color;
+  	transition-duration: 0.5s;
+
+  	&:before {
+  		background: $de-blue;
+	    content: "";
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    transform: scaleX(0);
+	    transform-origin: 100% 0;
+	    transition-property: transform;
+	    transition-duration: 0.5s;
+	    transition-timing-function: ease-out;
+	    z-index: -1;
+  	}
+
+  	&:hover {
+
+  		h6 {
+    		color: $white;
+    		transition: 0.3s ease-in-out;
+    	}
+
+	    &:before {
+	      transform: scaleX(1);
+	      transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+    	}
+  	}
+}
+
+section.section-wc-single {
+	margin-top: 1.5rem;
 }
 
 /* News and Features Section */
