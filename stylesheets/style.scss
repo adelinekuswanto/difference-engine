@@ -287,7 +287,7 @@ ul> li {
   	overflow: visible;
 
 	&:hover {
-	  	opacity: 0.7;
+	  	opacity: 1;
 	}
 }
 
@@ -464,7 +464,7 @@ button {
 .btn {
 	font-family: $archivo;
 	font-weight: 600;
-	font-size: 14px;
+	font-size: 13px;
   	position: relative;
   	display: inline-block;
   	padding: 1rem 1.5rem;
@@ -534,6 +534,45 @@ button {
   	}
 }
 
+.dropdown {
+	.btn {
+		padding: 0.75rem 1.5rem;
+	}
+}
+.dropdown-menu {
+	    color: $de-blue;
+	    border: 2px solid $de-blue;
+	    border-radius: 0;
+	    font-size: 13px;
+	    background: $de-grey;
+	    z-index: 2;
+
+	.dropdown-item {
+		color: $de-blue;
+		font-weight: 600;
+		padding: 0.75rem 1.5rem;
+
+		&:hover {
+			color: $white;
+			background: $de-blue;
+		}
+	}
+}
+
+.sorting-result {
+	text-align: right;
+	text-transform: uppercase;
+	color: $de-blue;
+	font-family: $archivo;
+	font-weight: 600;
+}
+
+
+.pagination {
+	.page-link {
+		color: $de-blue;
+	}
+}
 /* Forms */
 
 .form-bluebg {
@@ -549,7 +588,6 @@ button {
 		input::placeholder {
 		  color: $white;
 		  font-size: 12px;
-		  text-decoration: italic;
 		}
 
 		.form-control {
@@ -579,7 +617,6 @@ button {
 	textarea::placeholder,
 	input::placeholder {
 	  font-size: 12px;
-	  text-decoration: italic;
 	  color: inherit;
 	}
 
@@ -716,7 +753,6 @@ header.main-header {
     		input::placeholder {
 			  color: $white;
 			  font-size: 12px;
-			  text-decoration: italic;
 			}
     	}
 	}
@@ -1034,6 +1070,7 @@ section.section-webcomics {
 			color: $white;
 			font-family: $archivo;
 			font-weight: 600;
+			margin-bottom: 0.5rem;
 		}
 
 		p {
