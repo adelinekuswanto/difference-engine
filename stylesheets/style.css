@@ -4,12 +4,79 @@
   src: url(../fonts/InputMono-Regular.ttf) format("truetype");
 }
 /*Variables*/
+.translate-up {
+  transform: translateY(-80px);
+  transition: 0.5s;
+}
+
+.translate-down {
+  transform: translateY(80px);
+  transition: 0.5s;
+}
+
+.wc-pagination-web,
+.wc-pagination-mobile,
+.wc-pagination-fix-mobile {
+  z-index: 3;
+  display: none;
+  background-color: #536dfe;
+  transition: 0.5s;
+}
+.wc-pagination-web .pagination .chapter-pg,
+.wc-pagination-mobile .pagination .chapter-pg,
+.wc-pagination-fix-mobile .pagination .chapter-pg {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #fff;
+  background-color: transparent;
+  border: 0;
+}
+.wc-pagination-web .pagination .page-link,
+.wc-pagination-mobile .pagination .page-link,
+.wc-pagination-fix-mobile .pagination .page-link {
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+}
+.wc-pagination-web .pagination .page-link:focus, .wc-pagination-web .pagination .page-link:hover,
+.wc-pagination-mobile .pagination .page-link:focus,
+.wc-pagination-mobile .pagination .page-link:hover,
+.wc-pagination-fix-mobile .pagination .page-link:focus,
+.wc-pagination-fix-mobile .pagination .page-link:hover {
+  color: #8c9eff;
+}
+.wc-pagination-web .pagination .page-item.disabled .page-link,
+.wc-pagination-mobile .pagination .page-item.disabled .page-link,
+.wc-pagination-fix-mobile .pagination .page-item.disabled .page-link {
+  color: #8c9eff;
+}
+
+.wc-read-share .list-inline-item {
+  padding: 0.5rem 0.75rem;
+  color: #fff;
+}
+
+.wc-control {
+  background: #536dfe;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 /*Body*/
 body {
   font-family: "InputMonoReg", sans-serif;
   color: #585858;
   font-size: 13px;
   background-color: #f5f5f5;
+}
+
+body.wc-read {
+  background-color: #fff;
 }
 
 a {
@@ -22,6 +89,7 @@ a:hover {
   color: #8c9eff;
 }
 
+/* Cards */
 .card,
 .card-img-top {
   border: 0;
@@ -30,6 +98,11 @@ a:hover {
 
 .card-columns .card {
   margin-bottom: 1.5rem;
+}
+
+/* Float */
+.fl-left {
+  display: inline-block;
 }
 
 /* Headings */
