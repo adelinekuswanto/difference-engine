@@ -202,9 +202,27 @@ ul > li {
   .sidebar a.link-animated:after {
     left: 0; }
 
+/* Modal Box */
+.modal-content {
+  border: 1px solid #536dfe;
+  border-radius: 0; }
+
+.modal-header {
+  border-bottom: 0; }
+
+.close {
+  color: #536dfe;
+  opacity: 1; }
+  .close:hover, .close:focus {
+    color: #8c9eff; }
+
 /* Share buttons */
+.wc-read-share .share-buttons {
+  color: #fff; }
+
 .share-buttons {
-  background: none; }
+  background: none;
+  border: 0; }
   .share-buttons ul li {
     width: 40px;
     height: 40px;

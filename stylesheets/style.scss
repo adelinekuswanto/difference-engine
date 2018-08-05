@@ -296,10 +296,37 @@ ul> li {
 	}
 }
 
+/* Modal Box */
+.modal-content {
+    border: 1px solid $de-blue;
+    border-radius: 0;
+}
+
+.modal-header {
+	border-bottom: 0;
+}
+
+.close {
+	color: $de-blue;
+	opacity: 1;
+
+	&:hover,
+	&:focus {
+		color: $de-light-blue;
+	}
+}
+
 /* Share buttons */
+
+.wc-read-share {
+	.share-buttons {
+		color: $white;
+	}
+}
 
 .share-buttons {
     background: none;
+    border: 0;
 
 	ul li {
 		width: 40px;
