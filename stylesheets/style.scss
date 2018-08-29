@@ -1,15 +1,16 @@
 /*Import font-face*/
 
-@font-face {
+/*@font-face {
     font-family: InputMonoReg;
     src: url(../fonts/InputMono-Regular.ttf) format('truetype');
-}
+}*/
 
 /*Variables*/
 
 $archivo-black: "Archivo Black", sans-serif;
 $archivo: "Archivo", sans-serif;
-$input-mono: "InputMonoReg", sans-serif;
+$input-mono: "Input Mono Reg", sans-serif;
+$input-mono-bold: "Input Mono Bd", sans-serif;
 
 $dark-grey: #585858;
 /*$de-blue: #536dfe;*/
@@ -113,6 +114,12 @@ a {
 a:hover {
 	text-decoration: none;
 	color: $de-light-blue;
+}
+
+p {
+	strong {
+		font-family: $input-mono-bold;
+	}
 }
 
 
