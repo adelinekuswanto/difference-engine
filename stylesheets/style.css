@@ -348,11 +348,13 @@ ul > li {
   backface-visibility: hidden;
   position: relative;
   transition: 0.5s color ease;
-  text-decoration: none;
+  text-decoration: underline;
   color: #fff; }
 .subnav-links a:hover,
 .form-bluebg a:hover {
-  color: #72C7E7; }
+  color: #72C7E7;
+  text-decoration: none;
+  transition: 0.5s ease; }
 .subnav-links a.after:after,
 .form-bluebg a.after:after {
   content: "";

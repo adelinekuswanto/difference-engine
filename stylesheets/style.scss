@@ -509,13 +509,15 @@ ul> li {
 	   			backface-visibility: hidden;
 	    position: relative;
 	  	transition: 0.5s color ease;
-	    text-decoration: none;
+	    text-decoration: underline;
 	    color: $white;
 	}
 
 	a {
 		&:hover {
 			color: $de-light-blue;
+			text-decoration: none;
+			transition: 0.5s ease;
 		}
 
 		&.after:after {
